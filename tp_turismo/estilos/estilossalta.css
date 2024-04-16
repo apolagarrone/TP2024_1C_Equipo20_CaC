@@ -1,0 +1,161 @@
+:root{
+    --bg-color:#7f5555; /* Color de fondo */
+    --primary-color:#9a6637; 
+    --secondary-color:#44431a; 
+    --third-color:#405319; 
+    --third-bis-color:#87a010;
+    --bg-input-color:#4f31572c;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body{
+    background-color: var(--bg-color);
+}
+
+#banner{
+    background-image: url(../img/salta/cuevas_portada.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    box-shadow: inset 0 0 0 2000px rgba(120, 122, 121, 0.5); /* establece una sombra interna actúa como un filtro. */
+
+}
+.foto{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;  /* Especifica cómo debe ajustarse y escalarse una imagen o un video. El valor de cover asegura que el contenido se ajuste al contenedor manteniendo su proporción y cubriendo todo el ancho disponible */
+    -o-object-fit: cover;  /* Este prefijo es necesario para que Opera pueda reconocer y aplicar la propiedad */
+    
+   
+}
+.contenedor{
+    /*background-color: #405319;
+    margin: 200px; nose como poner*/
+    display: flex;
+    flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+  
+}
+.containerP {
+    max-width: 1200px;
+    margin: 120px auto;
+    display: flex;
+}
+
+.container{
+    
+    max-width: 1200px;
+    margin: 100px auto;
+    
+  
+}
+.card{
+    width: 100%;
+    margin: 10px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #FFF;
+    box-shadow: 0px 1px 10px rgb(0,0,0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+
+}
+.card:hover{
+    box-shadow: 5px 5px 20px rgb(0,0,0, 0.4); 
+    transform: translateY(-3%);
+}
+.card .contenido{
+    padding: 15px;
+    text-align: center;
+}
+.card .contenido p{
+    line-height: 1.5;
+    color: #6a6a6a;
+}
+
+.card .contenido a{
+    text-decoration: none;
+    display: block;
+    padding:10px ;
+    margin-top: 10px;
+    color: #677746;
+    transition: all 400ms ease;
+    border: 1px solid 405319;
+    border-radius: 4px;
+
+}
+.card .contenido a:hover{
+    background: #405319;
+    color:white ;
+}
+
+
+#list-popular {
+    display: inline-block;
+    
+    margin-right: 10px; /* Espacio entre las imágenes */
+    width: fit-content;
+   
+}
+
+
+/* Estilos para los id #popular y #top rated */
+#popular,
+#top-rated {
+    text-align: center;
+}
+
+#popular h2
+ {
+    position: relative;
+}
+
+.header{
+    background-color: transparent;
+    color: #FFF;
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 100px auto;
+    display: flexbox;
+}
+.card-banner {
+    margin: 0 auto;
+    /* Se utiliza comúnmente para centrar horizontalmente un elemento dentro de su contenedor. */
+    text-align: center;
+    padding: 0px 160px;
+    /* Aplica un relleno de cero píxeles en la parte superior e inferior del elemento y un relleno de 160 píxeles en los lados izquierdo y derecho. */
+}
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 0;
+    
+}
+
+.gallery-item {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+    
+#top-rated{
+    margin-top: 300px;
+}

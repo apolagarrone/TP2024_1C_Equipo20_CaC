@@ -1,0 +1,143 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth; 
+}
+
+
+header{
+   background-color: darkgreen;
+   text-align: right;
+  
+}
+
+nav{
+    width: 100%;
+    height: 50px;
+    float: right;
+    display: flex;
+    justify-content: flex-end;
+    float: right;
+    padding: 20px;
+    position: sticky;
+    text-align: right;
+    top: 0;
+    z-index: 10; 
+  
+}
+
+a{    
+    text-decoration: none;
+    width: 130px;
+    height: 15px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+    transition: 0.5s all ease-out;  
+}
+
+nav :hover {
+	color: green;
+	text-decoration: none;
+}
+
+
+
+.slidefot{
+    position: relative;
+    width: 100%;
+    height: 500px;
+ 
+    margin: auto;    
+    animation-name: slide;
+    animation-duration: 18s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+@keyframes slide {
+  
+    0%{background-image: url(../img/misiones/cataratas.jpg); background-size: cover; background-position: center;}
+    15%{background-image: url(../img/misiones/helecho.jpg); background-size: cover; background-position: center}
+    35%{background-image: url(../img/misiones/orquidea.jpg);background-size: cover; background-position: center}
+    60%{background-image: url(../img/misiones/yerbamate.jpg);background-size: cover; background-position: center}
+    85%{background-image: url(../img/misiones/artesanias.jpg);background-size: cover; background-position: center}
+    100%{background-image: url(../img/misiones/cataratas.jpg);background-size: cover; background-position: center}
+
+    }   
+
+.slidefot h1{
+      
+     
+        padding-top:12% ;
+        font-size: 50px;
+        margin: auto;
+}
+.slidefot h2{
+        
+            font-size: 40px;
+            margin: auto;
+        
+
+}
+
+.titulo{
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    vertical-align: center  ;
+    color: white;
+  
+  
+   
+}
+
+#contenedor-dest{
+    position: relative;
+    max-width: 80%;
+    margin: auto;
+    display: flex;
+    padding-top: 1vh ;
+    box-sizing: inherit;
+}
+.destinos {
+ 
+    max-width: 400px;
+    padding: 25px;
+    margin: 10px auto;
+}
+
+.destinos img{
+    max-width: 100%;
+}
+
+footer{
+    max-height: 10vh;
+    width: 100%;
+    background-color: rgb(90, 90, 90);
+    text-align: center;
+    padding: 10px;
+
+}
+
+
+    
+
+@media only screen and (max-width: 600px) {
+#contenedor-dest {
+        max-width: 100%;
+        margin: auto;
+        display: block;
+        background-color: aqua;
+        direction: column;
+        box-sizing: content-box;}   
+}
+.destinos img{
+    max-width: 100%;
+    margin: auto;
+}
