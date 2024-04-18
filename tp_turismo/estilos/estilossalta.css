@@ -3,7 +3,7 @@
     --primary-color:#9a6637; 
     --secondary-color:#44431a; 
     --third-color:#405319; 
-    --third-bis-color:#87a010;
+    --third-bis-color:#ffffff;
     --bg-input-color:#4f31572c;
 
 }
@@ -15,11 +15,11 @@
 }
 
 body{
-    background-color: var(--bg-color);
+    background-color: var(--third-bis-color)
 }
 
-#banner{
-    background-image: url(../img/salta/cuevas_portada.jpg);
+#slide{
+    background-image: url(/IMG/cuevas\ portada.jpg);
     background-size: cover;
     background-position: center;
     height: 600px;
@@ -43,12 +43,6 @@ body{
    justify-content: center;
   
 }
-.containerP {
-    max-width: 1200px;
-    margin: 120px auto;
-    display: flex;
-}
-
 .container{
     
     max-width: 1200px;
@@ -56,15 +50,25 @@ body{
     
   
 }
+.containerP {
+    max-width: 1200px;
+    margin: 120px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
 .card{
-    width: 100%;
+    width: 325px;
     margin: 10px;
     border-radius: 6px;
     overflow: hidden;
-    background: #FFF;
+    background: #964949;
     box-shadow: 0px 1px 10px rgb(0,0,0, 0.2);
     cursor: default;
     transition: all 400ms ease;
+    
 
 }
 .card:hover{
@@ -77,7 +81,7 @@ body{
 }
 .card .contenido p{
     line-height: 1.5;
-    color: #6a6a6a;
+    color: #000000;
 }
 
 .card .contenido a{
@@ -85,14 +89,14 @@ body{
     display: block;
     padding:10px ;
     margin-top: 10px;
-    color: #677746;
+    color: #ffffff;
     transition: all 400ms ease;
     border: 1px solid 405319;
     border-radius: 4px;
 
 }
 .card .contenido a:hover{
-    background: #405319;
+    background: #dca7a7;
     color:white ;
 }
 
@@ -133,7 +137,7 @@ body{
     margin: 100px auto;
     display: flexbox;
 }
-.card-banner {
+.card-slide {
     margin: 0 auto;
     /* Se utiliza comúnmente para centrar horizontalmente un elemento dentro de su contenedor. */
     text-align: center;
@@ -157,5 +161,34 @@ body{
 }
     
 #top-rated{
-    margin-top: 300px;
+    margin-top: 200px;
 }
+
+#nueva-seccion p{
+    margin: 20px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 30px;
+    text-align: left;
+}
+
+.info{
+    margin: 30px;
+}
+.ubicacion{
+width: 200px;
+height: 400px;
+  background-color: #405319;
+ float: left;
+}
+#ubi{
+  text-align: left;
+  margin: 10px;
+}
+#descript{
+    text-align: center;
+}
+.iframe{
+    float: right;
+}
+
+/* Media queries para hacerlo responsive */
