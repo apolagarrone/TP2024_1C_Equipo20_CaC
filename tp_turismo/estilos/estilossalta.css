@@ -1,12 +1,3 @@
-:root{
-    --bg-color:#7f5555; /* Color de fondo */
-    --primary-color:#9a6637; 
-    --secondary-color:#44431a; 
-    --third-color:#405319; 
-    --third-bis-color:#ffffff;
-    --bg-input-color:#4f31572c;
-
-}
 *{
     margin: 0;
     padding: 0;
@@ -190,5 +181,3 @@ height: 400px;
 .iframe{
     float: right;
 }
-
-/* Media queries para hacerlo responsive */
