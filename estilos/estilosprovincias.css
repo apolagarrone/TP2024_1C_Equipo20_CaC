@@ -114,7 +114,7 @@ p{
     z-index: 10; 
 }
 
-.nav-misiones a, .nav-cordoba, .navSalta a{    
+.nav-misiones a, .nav-cordoba a, .navSalta a{    
     text-decoration: none;
     width: 150px;
     height: auto;
@@ -465,7 +465,7 @@ footer{
     display: block;
 }
 
-.nav-misiones, .nav-cordoba {
+.nav-misiones, .nav-cordoba, .navSalta {
         display: flex;
         flex-direction: column;
         justify-content: top;
