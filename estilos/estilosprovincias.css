@@ -203,12 +203,12 @@ p{
 
 @keyframes slidesalta{
   
-    0%{background-image: url(/TP2024_1C_Equipo20_CaC/img/salta/Valle-de-Cusi-Cusi-Salta-Province-Jujuy-Argentina.jpg); background-size: cover; background-position: center;}
-    15%{background-image: url(/TP2024_1C_Equipo20_CaC/img/salta/salinas.jpg); background-size: cover; background-position: center}
-    35%{background-image: url(/TP2024_1C_Equipo20_CaC/img/salta/cardones34.jpg);background-size: cover; background-position: center}
-    60%{background-image: url(/TP2024_1C_Equipo20_CaC/img/salta/99.jpg);background-size: cover; background-position: center}
-    85%{background-image: url(/TP2024_1C_Equipo20_CaC/img/salta/14.jpg);background-size: cover; background-position: center}
-    100%{background-image: url(/TP2024_1C_Equipo20_CaC/img/salta/5b.jpg);background-size: cover; background-position: center}
+    0%{background-image: url(../img/salta/Valle-de-Cusi-Cusi-Salta-Province-Jujuy-Argentina.jpg); background-size: cover; background-position: center;}
+    15%{background-image: url(../img/salta/salinas.jpg); background-size: cover; background-position: center}
+    35%{background-image: url(../img/salta/cardones34.jpg);background-size: cover; background-position: center}
+    60%{background-image: url(../img/salta/99.jpg);background-size: cover; background-position: center}
+    85%{background-image: url(../img/salta/14.jpg);background-size: cover; background-position: center}
+    100%{background-image: url(../img/salta/5b.jpg);background-size: cover; background-position: center}
 
 }   
 
