@@ -359,7 +359,7 @@ p{
 
 /*Destino1 + 2*/
 
-.seccionDestino1, #seccionDestino2 {
+.seccionDestino1, .seccionDestino2 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -373,7 +373,7 @@ p{
     background-color: #f4d3b0c8;
 }
 
-.seccionDestino1 h4, #seccionDestino2 h4{
+.seccionDestino1 h4, .seccionDestino2 h4{
     padding: 15px;
 } 
 
@@ -480,10 +480,7 @@ footer{
     padding: 0 15px 0 15px;
 }   
 
-.presentacion{
-    
-    height: 64vh;
-}
+
 #contenedor-dest {
         max-width: 100%;
         margin: auto;
