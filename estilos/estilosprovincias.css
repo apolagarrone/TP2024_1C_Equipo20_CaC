@@ -99,7 +99,9 @@ p{
 
 /*NAV*/
 
-.nav-misiones, .nav-cordoba, .navSalta {
+.nav-misiones, 
+.nav-cordoba, 
+.navSalta {
     font-family: raleway;
     font-size: 14px;
     display: flex;
@@ -238,7 +240,7 @@ p{
 /*SECCION 1*/
 .presentacion{
     background-color: #e6e7c4;
-    height: 40%;
+    
     margin: auto;
     display: flex;
     justify-content: center;
@@ -260,22 +262,23 @@ p{
 
 /*cuadros con destinos*/
 
-#contenedor-dest{
+.contenedor-dest{
     max-width: 1200px;
-    margin: auto;
+    margin: 120px auto;
     display: flex;
     justify-content: center;
-    padding: 2vh 0  2vh 0  ;
-    box-sizing: inherit;
+    flex-wrap: wrap;
 }
 
 .destinos{
-    position: relative;
-    width: 390px;
+    width: 325px;
     margin: 10px;
-    border-radius: 10px;
+    border-radius: 6px;
     overflow: hidden;
     background: beige;
+    box-shadow: 0px 1px 10px rgb(0,0,0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
 }
 .destinosalta {
     background: #e4c2a0;
@@ -289,7 +292,7 @@ p{
 
 .destinos img{
     max-width: 100%;
-    max-height: 40%;
+    max-height: 45%;
     object-fit: cover;
 }
 
@@ -482,7 +485,7 @@ footer{
 
 .presentacion{
     
-    height: 64vh;
+    height: 40%;
 }
 #contenedor-dest {
         max-width: 100%;
@@ -495,11 +498,13 @@ footer{
 .destinos{
     margin: 10px auto;
     width: 90%;
+    max-width: 600px;
     
 }
 
 .destinos p {
     font-size: 15px;
+    margin-bottom: 10px;
 }
 
 .destinos img{
@@ -518,6 +523,7 @@ footer{
     width: 90vw;
     padding: 15px;    
 }
+
 
 .imageDestino1, .imageDestino2{
     width: 90vw;
@@ -546,32 +552,6 @@ footer{
         max-height: 30vh;
     }
 
-    #contenedor-dest {
-        
-        
-        flex-wrap: wrap;
-        row-gap: 10px;
-        box-sizing: border-box;}   
-
-.destinos{
-    margin: 5px;
-   
-}
-.destinos img{
-    min-width: 100%;
-    height: 40%;
-    object-fit: cover;
-    margin: auto;
-}
-
-.destinos p {
-    font-size: 15px;
-}
-
-.destinos a{
-    align-self: flex-end    ;
-}
-}
 
 
 @media only screen and (min-width: 1200px) {
