@@ -116,7 +116,7 @@ p{
     z-index: 10; 
 }
 
-.nav-misiones a, .nav-cordoba, .navSalta a{    
+.nav-misiones a, .nav-cordoba a, .navSalta a{    
     text-decoration: none;
     width: 150px;
     height: auto;
@@ -362,7 +362,7 @@ p{
 
 /*Destino1 + 2*/
 
-.seccionDestino1, #seccionDestino2 {
+.seccionDestino1, .seccionDestino2 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -376,7 +376,7 @@ p{
     background-color: #f4d3b0c8;
 }
 
-.seccionDestino1 h4, #seccionDestino2 h4{
+.seccionDestino1 h4, .seccionDestino2 h4{
     padding: 15px;
 } 
 
@@ -468,7 +468,7 @@ footer{
     display: block;
 }
 
-.nav-misiones, .nav-cordoba {
+.nav-misiones, .nav-cordoba, .navSalta {
         display: flex;
         flex-direction: column;
         justify-content: top;
@@ -483,10 +483,14 @@ footer{
     padding: 0 15px 0 15px;
 }   
 
+<<<<<<< HEAD
 .presentacion{
     
     height: 40%;
 }
+=======
+
+>>>>>>> 1f7db353a3acf7924627f0312187777d6b3d3654
 #contenedor-dest {
         max-width: 100%;
         margin: auto;
