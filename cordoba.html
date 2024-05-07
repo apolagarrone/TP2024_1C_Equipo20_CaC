@@ -9,23 +9,41 @@
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>  -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="img/favicon.png">
+    <!-- Script de Fontawesome -->
+    <script src="https://kit.fontawesome.com/f7fb471b65.js" crossorigin="anonymous"></script>
     <title>Cordoba Natural</title>
     
 </head>
 <body>
     
-    <header>
-        
+   
+    <header class="header">
+        <input type="checkbox" id="side-menu" class="side-menu">
+        <label for="side-menu" class="hamb"><span class="hamb-line"></span></label>
+        <nav class="nav">
+            <ul class="menu">
+                
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./salta.html">Salta</a></li>
+                <li><a href="./misiones.html">Misiones</a></li>
+                <li><a href="./ushuaia.html">Ushuaia</a></li>
+                
+                <li>
+                    <a class="volver" href="./cordoba.html">
+                        <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                        <span class="login-text">Volver</span>
+                    </a></li>
+                <li>
+                    <a class="btn" href="#">
+                        <i class="fas fa-sign-in-alt"></i>
+                        <span class="login-text">Regristrarse</span>
+                    </a></li>
+                
+           
+            </ul>
+        </nav>
     </header>
-    
-    <nav class="nav-cordoba">
-         
-        <a href="index.html">Home</a>
-        <a href="#condorito">P.N. Q. del Condorito</a>
-        <a href="#traslasierra">P.N. Traslasierra</a>
-        <a href="#ansenuza">P.N.Ansenuza</a>
-
-</nav>
+ 
 
 
 <main>
@@ -71,7 +89,7 @@
                         <img src= "img/cordoba/carrusel_traslasierra_04.jpg" alt="Cerro uritorco" class="foto">
                     </figure>
                     <div class="contenido">
-                        <h4>Cascadas de Cafayate</h4>
+                        <h4>Tras las sierras</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore excepturi, saepe veritatis
                             dolor itaque commodi, illo iste fugiat, animi numquam tempore temporibus ipsam. Tenetur,
                             fuga distinctio minima dicta dolor ipsa.</p>
@@ -86,7 +104,7 @@
                         <img src="img/cordoba/carrusel_pn_ansenuza_07_ph_pablo_rodriguez_merkel.jpeg" alt="Laguna salada de mar chiquita" >
                     </figure>
                     <div class="contenido">
-                        <h4>Laguna del toro</h4>
+                        <h4>Ansenuza</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore excepturi, saepe veritatis
                             dolor itaque commodi, illo iste fugiat, animi numquam tempore temporibus ipsam. Tenetur,
                             fuga distinctio minima dicta dolor ipsa.</p>
