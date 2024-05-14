@@ -1,0 +1,56 @@
+*{
+    font-family: "poppins", "raleway", sans-serif   ;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+
+.iconos-redes, .bx {
+    display: flex;
+    color: #7AB730;
+    font-size: 26px;
+    
+    
+}
+
+.iconos-contacto a, p{
+    display: inline-flex;
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    padding: 0px, 110px, 0px, 110px;
+}
+
+.footer-contacto a, p{
+    display: flex;
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    padding: 0px, 110px, 0px, 110px;
+
+}
+
+
+/*FORMULARIO*/
+
+input, select{
+    display: flex; /*para que se ubiquen uno debajo del otro*/
+    padding: 10px;
+    margin: 15px;
+    width: 250px;
+
+}
+
+input[type="radio"],  input[type="checkbox"] {    
+    display: inline-flex;
+    width: 215px;
+    height: 15px;
+
+} 
+
+/*#registro-tel {
+    width: 50%;
+}
