@@ -129,12 +129,14 @@ ul
     margin: auto;
 }
 
+
 .nav
 {
+    width: 300px;
     max-width: 50%; /*modif pao*/
     height: auto; /*modif pao*/
     position: fixed;
-    background-color: #e6e7c4;
+    background-color: #cfd0aa;
     overflow: hidden;
     max-height: 0;
     transition: max-height .5s ease-out;
@@ -173,7 +175,7 @@ ul
 .hamb-line::before,
 .hamb-line::after
 {
-    background: black;
+    background: rgb(0, 0, 0);
     content: '';
     display: block;
     height: 100%;
@@ -766,4 +768,53 @@ footer{
     align-self: flex-end;
    
 }
+}
+/*MEDIA QUERYES DEL NAV*/
+@media (min-width: 768px)
+{
+    .nav
+    {  
+        max-height: none;
+        top: 0;
+        position:sticky;
+        float: right;
+        width: fit-content;
+        background-color:transparent;
+   
+    }
+   
+    .nav a{
+       color: #000000;
+        font-size: 15px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 10px;
+        padding: 8px;
+        margin: 0 5px 0 5px;
+        text-align: center;
+        align-items: center;
+        transition: 0.5s all ease-out;  
+     
+    }
+    .menu li
+    {
+        float: left;
+    
+    }
+
+    .menu a:hover
+    {
+        background-color: #e6e7c4;
+        color: rgb(0, 0, 0);
+    }
+    li .volver{
+        display: none;
+    }
+    li .btn{
+        display: flex;
+    }
+
+    .hamb
+    {
+        display: none;
+    }
 }
