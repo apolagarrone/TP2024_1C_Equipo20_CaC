@@ -1,0 +1,42 @@
+[ "Destinos",
+    {
+        "Nombre": "Marcela",
+        "Edad": 55,
+        "Calidad de servicio": "excelente",
+        "Descripcion":"Lugar comodo, divertido , mucgas cosas para hacer ",
+        "Origen": "Chile",
+        "image":"img/personas/marcela.jpg"
+      },
+
+      {
+        "Nombre": "Juan",
+        "Edad": 55,
+        "Calidad de servicio": "excelente",
+        "Descripcion":"Lugar comodo, divertido , mucgas cosas para hacer ",
+        "Origen": "Chile",
+        "image":"img/personas/juan.jpg"
+        
+      },
+      {
+        "Nombre": "Martina",
+        "Edad": 55,
+        "Calidad de servicio": "excelente",
+        "Descripcion":"Lugar comodo, divertido , mucgas cosas para hacer ",
+        "Origen": "Chile",
+        "image":"img/personas/martina.jpg"
+      },
+      {
+        "Nombre": "Pablo",
+        "Edad": 55,
+        "Calidad de servicio": "excelente",
+        "Descripcion":"Lugar comodo, divertido , mucgas cosas para hacer ",
+        "Origen": "Chile",
+        "image":"img/personas/pablo.jpg"
+        
+      }
+
+
+
+
+]	
+	
