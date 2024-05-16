@@ -311,6 +311,71 @@ nav a:hover, a:active {
     float: left;
 }
 
+/* stylo de las cartas de reseñas
+#Persona {
+    padding: 25px; 
+    background-color: #7AB730;
+    border-radius: 25px;
+    margin: 10px;
+    width: 300px;
+    text-align: center;
+    position: relative; 
+    }
+
+  
+    
+    #Nombre{
+        font-size: 40px; 
+        color: rgb(0, 0, 0);
+        position: absolute;
+        top: 5px;
+        left: 0; 
+        width: 100%; 
+        margin: 0; 
+        padding: 0; 
+      
+        
+    }
+    #Foto{
+        border-radius: 33px;
+        width: 300px;
+        height: 300px;
+    }
+
+    .controles {
+        position: fixed;
+        right: 25px;
+        bottom: 25px;
+        background-color: rgb(173, 117, 117);
+        border-radius: 10px;
+        width: 200px;
+        padding: 15px 30px;
+
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .controles button {
+        padding: 10px;
+        flex: 1;
+        margin: 0 5px;
+        transition: .2s all;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .controles button:hover {
+        background-color: black;
+        color: white;
+    }
+
+*/
+
+
+
+
+
+
 
 /*.registro img {
     margin-top: 100px;

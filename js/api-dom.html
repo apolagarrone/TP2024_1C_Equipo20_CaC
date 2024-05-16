@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f7fb471b65.js" crossorigin="anonymous"></script>
     <title>Ejemplo de llamado a API + DOM</title>
    
-
+    
     <style>
         main {
             min-height: 100vh;
@@ -14,10 +15,11 @@
             justify-content: center;
             align-items: center;
         }
+      
 
-        article {
-        padding: 25px;
-        background-color: #9ec075 ;
+        #Persona {
+        padding: 25px; 
+        background-color: #7AB730;
         border-radius: 25px;
         margin: 10px;
         width: 300px;
@@ -28,33 +30,28 @@
       
         
         #Nombre{
-            color: wheat;
+            font-size: 40px; 
+            color: rgb(0, 0, 0);
             position: absolute;
-            top: 10px;
+            top: 5px;
             left: 0; 
             width: 100%; 
             margin: 0; 
             padding: 0; 
-            font-size: 30px; 
+          
             
         }
         #Foto{
             border-radius: 33px;
-            width: 200px;
-            height: 200px;
+            width: 300px;
+            height: 300px;
         }
 
-        article img {
- 
-             background-color: antiquewhite;
-             width: 100%;
-        }
         .controles {
             position: fixed;
             right: 25px;
             bottom: 25px;
-
-            background-color: red;
+            background-color: rgb(173, 117, 117);
             border-radius: 10px;
             width: 200px;
             padding: 15px 30px;
@@ -83,19 +80,24 @@
     <h1>Ejemplo de llamado a API + DOM</h1>
 
     <main>
-        <article id="Persona">
-            <h4><span id="Nombre"></span></h4>
-            <img id="Foto" src="" alt="">
-            
-            <h2><span id="Servicio"></span></h2>
-            <h2><span id="Descripcion"></span></h2>
-        </article>
-    </main>
+        <div class="reseñas">
+            <article id="Persona">
+                <h4><span id="Nombre"></span></h4>
+                <img id="Foto" src="" alt="">
+               
+                <h2><span id="Servicio"></span> <i class="fa fa-star" aria-hidden="true"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i></i></h2>
+                <h2><span id="Descripcion"></span></h2>
+            </article>
+        </div>
+       
+    
 
-    <div class="controles">
-        <button id="Agregar">Agregar</button>
-        <button id="Quitar">quitar</button>
-    </div>
+        <div class="controles">
+            <button id="Agregar">Ver mas reseñas</button>
+            <button id="Quitar">Ver menos</button>
+        </div>
+
+   </main>
 
     <script src="/js/json.js"></script>
 </body>

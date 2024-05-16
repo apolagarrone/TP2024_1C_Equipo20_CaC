@@ -7,6 +7,8 @@ persona.remove()
  botonAgregar.addEventListener("click", function(){
   AgregarPersona();
  });
+ let botonQuitar = document.querySelector("#Quitar");
+ botonQuitar.addEventListener("click", QuitarPersona)
 let indexPersona=0;
  function AgregarPersona(){
     fetch("https://apolagarrone.github.io/TP2024_1C_Equipo20_CaC/datos.json")
@@ -34,6 +36,11 @@ let indexPersona=0;
         }
     })
     .catch(error => console.log("Ocurrió un error! " + error));
+}
+function QuitarPersona(){
+    if(contenedor.childElementCount > 0){
+        contenedor.removeChild(contenedor.lastChild);
+    }
 }
    
 
