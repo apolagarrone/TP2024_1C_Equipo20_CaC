@@ -95,6 +95,7 @@ nav {/*p*/
     background-color: rgb(255, 255, 255);
     box-shadow: 1rem 1rem 20px 20px rgba(0, 0, 0, 0.155);
     margin: -35px auto;
+    z-index: 1000;
 
     /*display: flex;
     justify-content: space-between;
@@ -311,71 +312,6 @@ nav a:hover, a:active {
     float: left;
 }
 
-/* stylo de las cartas de reseñas
-#Persona {
-    padding: 25px; 
-    background-color: #7AB730;
-    border-radius: 25px;
-    margin: 10px;
-    width: 300px;
-    text-align: center;
-    position: relative; 
-    }
-
-  
-    
-    #Nombre{
-        font-size: 40px; 
-        color: rgb(0, 0, 0);
-        position: absolute;
-        top: 5px;
-        left: 0; 
-        width: 100%; 
-        margin: 0; 
-        padding: 0; 
-      
-        
-    }
-    #Foto{
-        border-radius: 33px;
-        width: 300px;
-        height: 300px;
-    }
-
-    .controles {
-        position: fixed;
-        right: 25px;
-        bottom: 25px;
-        background-color: rgb(173, 117, 117);
-        border-radius: 10px;
-        width: 200px;
-        padding: 15px 30px;
-
-        display: flex;
-        justify-content: space-evenly;
-    }
-
-    .controles button {
-        padding: 10px;
-        flex: 1;
-        margin: 0 5px;
-        transition: .2s all;
-        border: none;
-        border-radius: 5px;
-    }
-
-    .controles button:hover {
-        background-color: black;
-        color: white;
-    }
-
-*/
-
-
-
-
-
-
 
 /*.registro img {
     margin-top: 100px;
@@ -426,66 +362,164 @@ input[type="radio"],  input[type="checkbox"] {
 
 } 
 
+/* SECCION TESTIMONIOS - stylo de las cartas de reseñas*/
+
+
+#main-reseñas {
+    max-width: 1200px;
+    min-height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+#main-reseñas h2, h4, i{
+    font-size: 20px;
+    flex-direction: column  ;
+    padding-top: 0.5em;
+    color: white;
+}
+
+
+#Persona {
+    padding-bottom: 35px; 
+    background-color: #7AB730;
+    border-radius: 10px;
+    margin: 10px;
+    width: 390px;
+    height: 600px;
+    text-align: center;
+    position: relative; 
+    
+}
+
+#Nombre{
+    font-size: 24px; 
+    position: relative;
+    top: 10px;
+    left: 0; 
+    margin: 0; 
+    padding: 0; 
+    bottom: 15px;
+}
+
+#Foto{
+    width: 390px;
+    height: 300px;
+    object-fit: cover;
+    
+}
+
+.descripcion{
+    padding: 30px;
+}
+.descripcion h4{
+    padding-bottom: 30px;
+}
+
+
+.testimonios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    z-index: 1000;
+}
+
+.testimonios p{
+    justify-content: center;
+}
+
+.controles {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    background-color: rgb(173, 117, 117);
+    border-radius: 10px;
+    width: 200px;
+    padding: 15px 30px;
+
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 1000;
+}
+
+
+.controles button {
+    padding: 10px;
+    flex: 1;
+    margin: 0 5px;
+    transition: .2s all;
+    border: none;
+    border-radius: 5px;
+}
+
+.controles button:hover {
+    background-color: black;
+    color: white;
+}
+
 
 /*SECCION FOOTER*/
 
 .logo-pie {
-    display: inline-grid;
-    background-color: #000000;
+display: inline-grid;
+background-color: #000000;
 }
 
-    .logo-pie img {
-        display: flex;
-        width: 16vw;
-    }
-
-    .logo-pie p a {
-        
-        color: rgb(255, 255, 255);
-    }
-#sec_foo {
+.logo-pie img {
     display: flex;
+    width: 16vw;
+}
+
+.logo-pie p a {
+    
+    color: rgb(255, 255, 255);
+}
+#sec_foo {
+display: flex;
 }
 
 /*MEDIA QUERYES*/
 
 @media only screen and (max-width: 600px) {
-    body{
-        background-color: #7AB730;
-    }
+body{
+    background-color: #7AB730;
+}
 
-    header{
-        display: none;
-    }
+header{
+    display: none;
+}
 
 nav{
-        width: 90%;
-        margin: auto;
-    }
-
-    .nav-items{
-        flex-direction: column;
-    }
-
-    .nav-items a{
-        padding: 0px;
-    }
-
-    .logo{
-        width: 30vw;
-    }
-
-    .cont-destinos{
-    width: 90vw;
-    display: flex;
-    flex-direction: column;
-    padding-top: 10px;
+    width: 90%;
+    margin: auto;
 }
-    .destinos{
-        max-width: 90vw;
-    }
 
-    }
+.nav-items{
+    flex-direction: column;
+}
+
+.nav-items a{
+    padding: 0px;
+}
+
+.logo{
+    width: 30vw;
+}
+
+.cont-destinos{
+width: 90vw;
+display: flex;
+flex-direction: column;
+padding-top: 10px;
+}
+.destinos{
+    max-width: 90vw;
+}
+
+}
 
 
 

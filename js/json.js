@@ -1,7 +1,7 @@
 let persona=document.querySelector("#Persona");
 let personaCopia=persona.cloneNode(true);
 
-let contenedor=document.querySelector("main");
+let contenedor=document.querySelector("#main-reseñas");//cambio main por main-reseñas
 persona.remove()
  let botonAgregar=document.querySelector("#Agregar");
  botonAgregar.addEventListener("click", function(){
