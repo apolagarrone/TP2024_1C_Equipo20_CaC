@@ -19,7 +19,8 @@ let indexPersona=0;
         nuevaPersona.querySelector("#Foto").src = destino.image;
         nuevaPersona.querySelector("#Foto").alt = "fot CV";
         nuevaPersona.querySelector("#Nombre").innerHTML = destino.Nombre;
-        nuevaPersona.querySelector("#Origen").innerHTML = destino.Servicio;
+        nuevaPersona.querySelector("#Servicio").innerHTML = destino.Servicio;
+       
         nuevaPersona.querySelector("#Descripcion").innerHTML = destino.Descripcion;
 
         contenedor.appendChild(nuevaPersona);
