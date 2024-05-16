@@ -6,7 +6,7 @@
             {
                 "Nombre": "Marcela",
                 "Edad": 55,
-                "Calidad-de-servicio": "excelente",
+                "Servicio": "excelente",
                 "Descripcion": "Lugar cómodo, divertido, muchas cosas para hacer",
                 "Origen": "Chile",
                 "image": "https://apolagarrone.github.io/TP2024_1C_Equipo20_CaC/img/personas/luciaa.jpg"
@@ -14,7 +14,7 @@
             {
                 "Nombre": "Juan",
                 "Edad": 55,
-                "Calidad de servicio": "excelente",
+                "Servicio": "excelente",
                 "Descripcion": "Lugar cómodo, divertido, muchas cosas para hacer",
                 "Origen": "Chile",
                 "image": "https://apolagarrone.github.io/TP2024_1C_Equipo20_CaC/img/personas/juan.jpg"
@@ -22,7 +22,7 @@
             {
                 "Nombre": "Martina",
                 "Edad": 55,
-                "Calidad de servicio": "excelente",
+                "Servicio": "excelente",
                 "Descripcion": "Lugar cómodo, divertido, muchas cosas para hacer",
                 "Origen": "Chile",
                 "image": "https://apolagarrone.github.io/TP2024_1C_Equipo20_CaC/img/personas/marcelaa.jpg"
@@ -30,10 +30,10 @@
             {
                 "Nombre": "Pablo",
                 "Edad": 55,
-                "Calidad de servicio": "excelente",
+                "Servicio": "excelente",
                 "Descripcion": "Lugar cómodo, divertido, muchas cosas para hacer",
                 "Origen": "Chile",
-                "image": "https://apolagarrone.github.com/TP2024_1C_Equipo20_CaC/img/personas/3.jpg"
+                "image": "https://apolagarrone.github.io/TP2024_1C_Equipo20_CaC/img/personas/pablo.jpg"
             }
         ]
     }
