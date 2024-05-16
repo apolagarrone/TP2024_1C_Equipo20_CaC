@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de llamado a API + DOM</title>
+   
+
+    <style>
+        main {
+            min-height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        article {
+        padding: 25px;
+        background-color: #9ec075 ;
+        border-radius: 25px;
+        margin: 10px;
+        width: 300px;
+        text-align: center;
+        position: relative; 
+        }
+
+      
+        
+        #Nombre{
+            color: wheat;
+            position: absolute;
+            top: 10px;
+            left: 0; 
+            width: 100%; 
+            margin: 0; 
+            padding: 0; 
+            font-size: 30px; 
+            
+        }
+        #Foto{
+            border-radius: 33px;
+            width: 200px;
+            height: 200px;
+        }
+
+        article img {
+ 
+             background-color: antiquewhite;
+             width: 100%;
+        }
+        .controles {
+            position: fixed;
+            right: 25px;
+            bottom: 25px;
+
+            background-color: red;
+            border-radius: 10px;
+            width: 200px;
+            padding: 15px 30px;
+
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .controles button {
+            padding: 10px;
+            flex: 1;
+            margin: 0 5px;
+            transition: .2s all;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .controles button:hover {
+            background-color: black;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Ejemplo de llamado a API + DOM</h1>
+
+    <main>
+        <article id="Persona">
+            <h4><span id="Nombre"></span></h4>
+            <img id="Foto" src="" alt="">
+            
+            <h2><span id="Servicio"></span></h2>
+            <h2><span id="Descripcion"></span></h2>
+        </article>
+    </main>
+
+    <div class="controles">
+        <button id="Agregar">Agregar</button>
+        <button id="Quitar">quitar</button>
+    </div>
+
+    <script src="/js/json.js"></script>
+</body>
+</html>
