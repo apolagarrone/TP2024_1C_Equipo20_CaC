@@ -3,13 +3,18 @@ let personaCopia=persona.cloneNode(true);
 
 let contenedor=document.querySelector("#main-reseñas");//cambio main por main-reseñas
 persona.remove()
+
  let botonAgregar=document.querySelector("#Agregar");
  botonAgregar.addEventListener("click", function(){
   AgregarPersona();
  });
+
  let botonQuitar = document.querySelector("#Quitar");
  botonQuitar.addEventListener("click", QuitarPersona)
+
 let indexPersona=0;
+
+
  function AgregarPersona(){
     fetch("https://apolagarrone.github.io/TP2024_1C_Equipo20_CaC/datos.json")
     .then(response => response.json())
@@ -32,7 +37,7 @@ let indexPersona=0;
 
         
         if (indexPersona >= data[0].Destinos.length) {
-            botonAgregar.disabled = true; // Desactivar el botón "Agregar" si ya no hay más personas por agregar
+            indexPersona=0; // inicia otra vez los registros
         }
     })
     .catch(error => console.log("Ocurrió un error! " + error));
