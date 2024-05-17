@@ -47,7 +47,7 @@
                 "Nombre": "Paola",
                 "Edad": 39,
                 "Servicio": "Muy bueno",
-                "Descripcion": "Me quede enamorado de Ushuaia, la laguna Esmeralda es bella",
+                "Descripcion": "Con mi familia volveriamos a Cordoba sin dudarlo",
                 "Origen": "Uruguay",
                 "image": "https://apolagarrone.github.io/TP2024_1C_Equipo20_CaC/img/personas/martina.jpg"
             },
@@ -55,9 +55,9 @@
                 "Nombre": "Pedro",
                 "Edad": 65,
                 "Servicio": "Excelente",
-                "Descripcion": "Me quede enamorado de Ushuaia, la laguna Esmeralda es bella",
+                "Descripcion": "Las cataratas del Iguazu son magicas, me encanto",
                 "Origen": "Uruguay",
-                "image": "https://apolagarrone.github.io/TP2024_1C_Equipo20_CaC/img/personas/pablo.jpg"
+                "image": "https://apolagarrone.github.io/TP2024_1C_Equipo20_CaC/img/personas/agustin.jpg"
             },
             {
                 "Nombre": "Alejandra",
@@ -71,9 +71,9 @@
                 "Nombre": "Agustin",
                 "Edad": 30,
                 "Servicio": "Excelente",
-                "Descripcion": "Me quede enamorado de Ushuaia, la laguna Esmeralda es bella",
+                "Descripcion": "Las cascadas de Cafayate bellas, hermoso para hacer trekking ",
                 "Origen": "Uruguay",
-                "image": "https://apolagarrone.github.io/TP2024_1C_Equipo20_CaC/img/personas/pablo.jpg"
+                "image": "https://apolagarrone.github.io/TP2024_1C_Equipo20_CaC/img/personas/marcos.jpg"
             },
             {
                 "Nombre": "Valentina",
