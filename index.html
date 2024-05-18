@@ -37,7 +37,17 @@
             <div class="nav-items">
 
                 <a href="#inicio">Inicio</a>
-                <a href="#destinos">Destinos</a>
+                <div class="menu-destino">
+                    <a href="#destino">Destino</a>
+                    <div class="lista">
+                        <ol>
+                            <li><a href="misiones.html">Misiones</a></li>
+                            <li><a href="salta.html">Salta</a></li>
+                            <li><a href="usuhaia.html">Usuhaia</a></li>
+                            <li><a href="cordoba.html">Cordoba</a></li>
+                        </ol>
+                    </div>
+                </div>
                 <a href="#registro">Registro</a>
                 <a href="#testimonios">Testimonios</a>
                 <a href="#contacto">Contacto</a>
@@ -220,37 +230,55 @@
 
     </main>
 <a name="contacto"></a>
-    <footer class="logo-pie">
-        <section>
-            <figure>
-                <a href="#inicio"><img src="img/Logo_ArgentiNA vde-bco.webp" alt=""></a>
-                <p>Para nosotros lo mas importante es tu comodidad, ten siempre presente que daremos lo mejor para que tu estes bien.</p>
-            </figure>
-        </section>
-        <section>
-            <figure>
-                <p><i class='bx bx-map'></i>Calle 123, Siempre viva</p>
-                <p><a href="info@codoacodo.com"><i class="bx bx-mail-send"></i>info@codoacodo.com</a></p>
-                <p><a href="+5491112345678"><i class="bx bx-phone"></i>+54 9 11 1234 5678</a></p>
 
-            </figure>
+<footer>
+    <section class="container">
+        <section class="ppal">
+              <figure class="col">
+                <a href="#inicio"><img src="img/Logo_ArgentiNA vde-bco.webp" alt="" class="logo"></a>
+                  <p>
+                    Para nosotros lo mas importante es tu comodidad, ten siempre presente que daremos lo mejor para que tu estes bien.
+                  </p>
+
+                  <div class="social">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                  </div>
+                </figure>
+
+              <figure class="col" id="servicios">
+                 <h3>NUESTROS SERVICIOS</h3>
+                 <div class="links">
+                    <a href="#">Nosotros</a>
+                    <a href="#">Destination</a>
+                    <a href="#">Servicios</a>
+                 </div>
+                </figure>
+
+              <figure class="col" id="contactos">
+                  <h3>CONTACTO</h3>
+                  <div class="contactos-detalles">
+                     <i class="bx bx-map"></i>
+                     <p>Calle 123, Siempre Viva</p>
+                  </div>
+                  <div class="contactos-detalles">
+                     <i class="bx bx-phone"></i>
+                     <p>+54 9 11 1234 5678</p>
+                  </div>
+                  <div class="contactos-detalles">
+                    <i class="bx bx-mail-send"></i>
+                    <p>info@codoacodo.com</p>
+                 </div>
+                </figure>
         </section>
-        <section>
-            <figure>
-                <h5>Siguenos</h5>
-                <a href="https://www.facebook.com" target="_blank"><i class='bx bxl-facebook'></i></a>
-                <a href="https://twitter.com/?lang=es" target="_blank"><i class='bx bxl-twitter'></i></a>
-                <a href="https://www.instagram.com" target="_blank"><i class='bx bxl-instagram'></i></a>
-                <a href="https://www.linkedin.com" target="_blank"><i class='bx bxl-linkedin'></i></a>
-            </figure>
-        </section>
-      
-        <section>
+        <section class="copy">
             <hr>
-            <p id="sec_foo"> Copyright <i class='bx bx-copyright'></i> <span>Programa Codo a Codo - Equipo 20 </span> Todos los derechos reservados </p>
+            <p> Copyright Programa Codo a Codo - Equipo 20 - Todos los derechos reservados </p>
         </section>
-    </footer> 
-
+    </section>
+ </footer>
 
     <!-- script de json -->
     <script src="js/json.js"></script>
