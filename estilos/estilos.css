@@ -366,12 +366,14 @@ input[type="radio"],  input[type="checkbox"] {
 
 
 #main-reseñas {
-    max-width: 1200px;
     min-height: 75vh;
     display: flex;
-    justify-content: center;
     align-items: center;
     margin: auto;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    object-fit: contain;
 }
 
 #main-reseñas h2, h4, i{
@@ -425,28 +427,26 @@ input[type="radio"],  input[type="checkbox"] {
     justify-content: center;
     height: auto;
     z-index: 1000;
+    padding-bottom: 100px;
 }
 
 .testimonios p{
     justify-content: center;
 }
 
-.controles {
-    position: fixed;
-    right: 25px;
-    bottom: 25px;
-    background-color: rgb(173, 117, 117);
+#controles {
+    width: 300px;
+    margin: auto;
+    position: relative;
+    background-color:#7AB730;
     border-radius: 10px;
-    width: 200px;
     padding: 15px 30px;
-
     display: flex;
-    justify-content: space-evenly;
     z-index: 1000;
 }
 
 
-.controles button {
+#controles button {
     padding: 10px;
     flex: 1;
     margin: 0 5px;
@@ -455,7 +455,7 @@ input[type="radio"],  input[type="checkbox"] {
     border-radius: 5px;
 }
 
-.controles button:hover {
+#controles button:hover {
     background-color: black;
     color: white;
 }

@@ -10,7 +10,7 @@ persona.remove()
  let botonQuitar = document.querySelector("#Quitar");
  botonQuitar.addEventListener("click", QuitarPersona)
 let indexPersona=0;
- function AgregarPersona(){
+function AgregarPersona(){
     fetch("https://apolagarrone.github.io/TP2024_1C_Equipo20_CaC/datos.json")
     .then(response => response.json())
     .then(data => {
@@ -22,7 +22,7 @@ let indexPersona=0;
         nuevaPersona.querySelector("#Foto").alt = "fot CV";
         nuevaPersona.querySelector("#Nombre").innerHTML = destino.Nombre;
         nuevaPersona.querySelector("#Servicio").innerHTML = destino.Servicio;
-       
+
         nuevaPersona.querySelector("#Descripcion").innerHTML = destino.Descripcion;
 
         contenedor.appendChild(nuevaPersona);
