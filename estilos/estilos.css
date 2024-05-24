@@ -129,6 +129,36 @@ nav a:hover, a:active {
     text-align: right;
 }
 
+/*NUEVO*/
+
+.lista ol {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+
+}
+.lista li {
+    text-align: center;
+    margin: 0;
+    position: relative;
+
+}
+.lista {
+    background-color: white;
+    display: none;
+    position: absolute;
+    list-style: none;
+}
+.menu-destino {
+    padding: 10px 25px 10px 25px;
+
+}
+.menu-destino:hover .lista {
+    display: block;
+}
+
+/*FIN NUEVO*/
+
 /*SECCION PRESENTACION*/
 
 .presentacion {
@@ -463,23 +493,83 @@ input[type="radio"],  input[type="checkbox"] {
 
 /*SECCION FOOTER*/
 
-.logo-pie {
-display: inline-grid;
-background-color: #000000;
+footer{
+    background-color: #000000ff;
+    position: relative;
+    width: 100%;
+    min-height: 350px;
+    padding: 3rem 1rem 0;
+}
+.container {
+   max-width: 1300px;
+   margin: 0 auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+.ppal{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
 }
 
-.logo-pie img {
-    display: flex;
-    width: 16vw;
+.col{
+   min-width: 250px;
+   color:#f2f2f2f2;
+   font-family: poppins;
+   padding:0 2rem;
+}
+.col .logo{
+   width: 200px;
+   margin-bottom:25px;
+}
+.col h3{
+   color: white;
+   margin-bottom: 20px;
+   position: relative;
+   cursor: default;
+   letter-spacing: 5px;
+}
+.col .social a i{
+   color: #7AB730;
+   width: 45px;
+   height: 45px;
+   margin-top:2rem;
+   margin-right: 10px;
+   text-align: center;
+   border-color: #7AB730;
+   border-style: outset;
+   transition: all 300ms ease;
+}
+.col .social a i:hover{
+    background-color: #7AB730;
+    color: white;
+}
+.col .links a{
+   display: block;
+   text-decoration: none;
+   color:#6c757d;
+   margin-bottom: 5px;
+   position: relative;
+   transition: all 300ms ease;
+}
+.col .links a:hover{
+   transform: translateX(-8px);
+   color:#7AB730;
+}
+.col .contactos-detalles{
+   display: inline-flex;
+   justify-content: space-between;
+}
+.col .contactos-detalles i{
+   margin-right:15px;
+}
+.copy{
+    margin-top: 30px;
+    padding: 15px 0;
 }
 
-.logo-pie p a {
-    
-    color: rgb(255, 255, 255);
-}
-#sec_foo {
-display: flex;
-}
 
 /*MEDIA QUERYES*/
 
@@ -519,6 +609,27 @@ padding-top: 10px;
     max-width: 90vw;
 }
 
+}
+
+@media(max-width:900px){
+ .ppal{
+   flex-direction: column;
+ }
+ .col{
+   width: 100%;
+   text-align: left;
+   margin-bottom: 25px;
+ }
+}
+@media(max-width:768px){
+ .ppal{
+   flex-direction: column;
+ }
+ .col{
+   width: 100%;
+   text-align: left;
+   margin-bottom: 20px;
+ }
 }
 
 
