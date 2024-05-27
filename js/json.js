@@ -6,7 +6,8 @@ persona.remove()
 
  let botonAgregar=document.querySelector("#Agregar");
  botonAgregar.addEventListener("click", function(){
-  AgregarPersona();
+   AgregarPersona();
+ 
  });
 
  let botonQuitar = document.querySelector("#Quitar");
@@ -35,17 +36,32 @@ let indexPersona=0;
         // Incrementar el índice para la próxima persona
         indexPersona++;
 
-        
+       
         if (indexPersona >= data[0].Destinos.length) {
             indexPersona=0; // inicia otra vez los registros
         }
+        
+
+       
     })
     .catch(error => console.log("Ocurrió un error! " + error));
 }
+
+
+
+
 function QuitarPersona(){
     if(contenedor.childElementCount > 0){
         contenedor.removeChild(contenedor.lastChild);
     }
 }
-   
+
+/*
+ let comentario = document.querySelectorAll('#Persona');
+        
+        let tamañoWidth = comentario[0].clientWidth;
+        
+        comentario.style.transform = "translate" + (- tamañoWidth * indexPersona) + "px";
+
+}*/
 
