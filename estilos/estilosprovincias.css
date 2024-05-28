@@ -547,14 +547,7 @@ li .btn{
      flex-direction: row-reverse;
 }
 
-footer{
-    position: sticky;
-    bottom: 0;
-    max-height: 10vh;
-    background-color: rgb(90, 90, 90);
-    text-align: center;
-    padding: 10px;
-}
+
 
 .mapa{
     position: relative;
@@ -563,6 +556,99 @@ footer{
 }
 .mapa h4{
     text-align: left;
+}
+
+
+/*SECCION FOOTER*/
+
+footer{
+    background-color: #000000ff;
+    position: relative;
+    width: 100vw;
+    min-height: 350px;
+    padding: 3rem 1rem 0;
+}
+.container {
+   max-width: 1300px;
+   margin: 0 auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+.ppal{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.col{
+   min-width: 250px;
+   color:#f2f2f2f2;
+   font-family: poppins;
+   padding:0 2rem;
+   
+   
+}
+.col .logo{
+   width: 200px;
+   margin-bottom:25px;
+}
+.col h3{
+   color: rgb(255, 255, 255);
+   font-size: 20px;
+   margin-bottom: 20px;
+   position: relative;
+   cursor: default;
+   letter-spacing: 5px;
+   text-align: justify;
+}
+.col .social a i{
+   color: #7AB730;
+   width: 45px;
+   height: 45px;
+   margin-top:2rem;
+   margin-right: 10px;
+   text-align: center;
+   border-color: #7AB730;
+   border-style: outset;
+   transition: all 300ms ease;
+}
+.col .social a i:hover{
+    background-color: #7AB730;
+    color: white;
+}
+.col .links a{
+   display: block;
+   text-decoration: none;
+   color:#6c757d;
+   margin-bottom: 5px;
+   position: relative;
+   transition: all 300ms ease;
+}
+.col .links a:hover{
+   transform: translateX(-8px);
+   color:#7AB730;
+}
+.col .contactos-detalles{
+
+   display: inline-flex;
+   justify-content: space-between;
+   
+}
+.col .contactos-detalles i{
+   margin-right:15px;
+   color: #7AB730;
+   font-size: 1.5em;
+   
+
+}
+.copy{
+    margin-top: 100px;
+    padding: 20px;
+    color:#6c757d;
+    font-size: 18px;
+
 }
    
 
@@ -637,12 +723,6 @@ footer{
     height:40vh;
     object-fit: cover;
     margin: auto;
-}
-
-.footer{
-    width: 100vh;
-    position: sticky;
-    bottom: 0;
 }
 
 .mapa iframe{
@@ -760,3 +840,31 @@ footer{
         display: none;
     }
 }
+@media only screen and (min-width: 601px) and (max-width: 1199px) {
+    
+
+    /* FOOTER*/
+     .ppal{
+        flex-direction: column;
+        }
+        .col{
+        width: 100%;
+        text-align: left;
+        margin-bottom: 25px;
+        }
+        }
+        @media(max-width:768px){
+        .ppal{
+        flex-direction: column;
+        }
+        .col{
+        width: 100%;
+        text-align: left;
+        margin-bottom: 20px;
+        }
+        .copy{
+            margin-top: 30px;
+            font-size: 15px;
+        
+        }
+    }
