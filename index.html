@@ -13,14 +13,14 @@
     <link rel="stylesheet" href="estilos/estilos.css">
     <title>ArgentiNA Viajes</title>
 </head>
-<a name="inicio"></a> <!--agrego link a inicio P-->
 
 <body>
+    <a name="inicio"></a>
     <header> 
         <figure>
             <div class="iconos-contacto">
-                <a href="info@codoacodo.com"><i class="bx bx-mail-send"></i>info@codoacodo.com &nbsp &nbsp| &nbsp &nbsp  </a>
-                <a href="+5491112345678"><i class="bx bx-phone"></i>+54 9 11 1234 5678</a>
+                <a href="info@codoacodo.com"><i class="bx bx-mail-send"></i>info@codoacodo.com   |   </a>
+                <a href="+5491112345678"><i class="bx bx-phone"></i>  +54 9 11 1234 5678</a>
             </div>
             <div class="iconos-redes">
                 <a href="https://www.facebook.com" target="_blank"><i class='bx bxl-facebook'></i></a>
@@ -37,17 +37,7 @@
             <div class="nav-items">
 
                 <a href="#inicio">Inicio</a>
-                <div class="menu-destino">
-                    <a href="#destino">Destino</a>
-                    <div class="lista">
-                        <ol>
-                            <li><a href="misiones.html">Misiones</a></li>
-                            <li><a href="salta.html">Salta</a></li>
-                            <li><a href="usuhaia.html">Usuhaia</a></li>
-                            <li><a href="cordoba.html">Cordoba</a></li>
-                        </ol>
-                    </div>
-                </div>
+                <a href="#destinos">Destinos</a>
                 <a href="#registro">Registro</a>
                 <a href="#testimonios">Testimonios</a>
                 <a href="#contacto">Contacto</a>
@@ -78,14 +68,14 @@
             
         </section>
         
-<a name="destinos"></a><!-- agrego para el link y actualizo seccion completa -->
+<a name="destinos"></a> <!-- agrego para el link y actualizo seccion completa -->
 <!-- agrego espacios para evitar solapamiento con nav -->
 <br>
 <br>
-<br>
+<br>    
 <br>
         <section>   <!--Actualizo seccion completa P  -->
-            <article>
+            <article class="encabezado-destinos">
                 <h2 >Destinos</h2>
                 <h1>Top de Destinos</h1>
                     <div class="cont-destinos">
@@ -101,13 +91,12 @@
                             <img src="img/cordoba/carrusel_pn_ansenuza_07_ph_pablo_rodriguez_merkel.jpeg" alt="">
                             <a href="cordoba.html" target="_blank"><h5>Cordoba</h5></a>
                         </figure>
-                        <figure class="destinos"    >
+                        <figure class="destinos">
                             <img src="img/ushuaia/destinoushuaia.jpg" alt="">
                             <a href="ushuaia.html" target="_blank"><h5>Ushuaia</h5></a>
                         </figure>
                     </div>
                 </article>
-            </figure>
         </section>
 
 <a name="registro"></a>
@@ -126,36 +115,41 @@
                     <li><i class='bx bx-check'></i>El mejor precio</li>
                 </ul>
             </article>  
-            </div>
-            <div class="cont-registro">
+          
+            
             <form action="" method="get" target="_self"> 
+                <fieldset>
                     <legend><h1>Registrate ahora</h1></legend>
-                    <input type="text" name="firstname" placeholder="Nombre">
-    
-                    <input type="text" name="lastname" placeholder="Apellido">
-    
-                    <input type="number" id="registro-tel" name="phone" placeholder="Ingrese el código de area y su teléfono xx-xxxx-xxxx">
-    
-                    
-                    <input type="email" name="email" id="email" placeholder="E-mail">
-    
-                    <legend>¿A donde te gustaría viajar?</legend>
+                        <input type="text" name="firstname" placeholder="Nombre">
+        
+                        <input type="text" name="lastname" placeholder="Apellido">
+        
+                        <input type="number" id="registro-tel" name="phone" placeholder="Ingrese el código de area y su teléfono xx-xxxx-xxxx">
+        
+                        
+                        <input type="email" name="email" id="email" placeholder="E-mail">
+                </fieldset>
+
+                <fieldset>
+                <legend>¿A donde te gustaría viajar?</legend>
                     <select name="destino" id="destino">
                         <option value="Misiones">Misiones</option>
                         <option value="Salta">Salta</option>
                         <option value="Cordoba">Córdoba</option>
                         <option value="Ushuaia">Ushuaia</option>
                     </select>                
-    
-                    <legend>Elegí tus actividades Favoritas</legend>
+                </fieldset>
+                <fieldset>
+                <legend>Elegí tus actividades Favoritas:</legend>
+                    <input type="checkbox" name="descanso" id="descanso">
                         <label for="descanso">Descanso y relajación</label>
-                        <input type="checkbox" name="descanso" id="descanso">
+                    <input type="checkbox" name="safaris" id="safaris">
                         <label for="safaris">Safaris fotográficos</label>
-                        <input type="checkbox" name="safaris" id="safaris">
+                    <input type="checkbox" name="tur-adventure" id="tur-adventure">
                         <label for="tur-adventure">Turismo aventura</label>
-                        <input type="checkbox" name="tur-adventure" id="tur-adventure">
     
                     <input type="submit" value="Enviar datos">
+                </fieldset>
                 </form>
                 </div>
          
@@ -171,12 +165,15 @@
             <article class="testimonios">
                 <H2>reseñas</H2>
                 <h1>Experiencias en primera persona</h1>
-                <p>Ofrecemos experiencias que se sienten en el cuerpo y el alma. Nuestros viajeros ya lo saben y nos recomiendan</p>
-            </article>
-            <div id="controles">
+                <p>Ofrecemos experiencias que se sienten en el cuerpo y el alma. 
+                    <br>Nuestros viajeros ya lo saben y nos recomiendan</p>
+                
+                <div id="controles">
                         <button id="Agregar">Ver más reseñas</button>
                         <button id="Quitar">Ver menos</button>
             </div>
+            </article>
+            
             <section id="main-reseñas">
                 <div id="Persona">
                     <figure id="comentario">
@@ -203,7 +200,7 @@
 <section class="container">
     <section class="ppal">
             <figure class="col">
-            <a href="#inicio"><img src="img/Logo_ArgentiNA vde-bco.webp" alt="" class="logo"></a>
+            <a href="#inicio"><img src="img/Logo_ArgentiNA-vde-bco.webp" alt="" class="logo"></a>
                 <p>
                 Para nosotros lo mas importante es tu comodidad, ten siempre presente que daremos lo mejor para que tu estes bien.
                 </p>

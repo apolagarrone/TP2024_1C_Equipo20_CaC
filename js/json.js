@@ -4,19 +4,18 @@ let personaCopia=persona.cloneNode(true);
 let contenedor=document.querySelector("#main-reseñas");//cambio main por main-reseñas
 persona.remove()
 
- let botonAgregar=document.querySelector("#Agregar");
- botonAgregar.addEventListener("click", function(){
-   AgregarPersona();
- 
- });
+let botonAgregar=document.querySelector("#Agregar");
+botonAgregar.addEventListener("click", function(){
+    AgregarPersona();
+});
 
- let botonQuitar = document.querySelector("#Quitar");
- botonQuitar.addEventListener("click", QuitarPersona)
+let botonQuitar = document.querySelector("#Quitar");
+botonQuitar.addEventListener("click", QuitarPersona)
 
 let indexPersona=0;
 
 
- function AgregarPersona(){
+function AgregarPersona(){
     fetch("https://apolagarrone.github.io/TP2024_1C_Equipo20_CaC/datos.json")
     .then(response => response.json())
     .then(data => {
@@ -36,32 +35,16 @@ let indexPersona=0;
         // Incrementar el índice para la próxima persona
         indexPersona++;
 
-       
+
         if (indexPersona >= data[0].Destinos.length) {
             indexPersona=0; // inicia otra vez los registros
         }
-        
-
-       
     })
     .catch(error => console.log("Ocurrió un error! " + error));
 }
-
-
-
 
 function QuitarPersona(){
     if(contenedor.childElementCount > 0){
         contenedor.removeChild(contenedor.lastChild);
     }
 }
-
-/*
- let comentario = document.querySelectorAll('#Persona');
-        
-        let tamañoWidth = comentario[0].clientWidth;
-        
-        comentario.style.transform = "translate" + (- tamañoWidth * indexPersona) + "px";
-
-}*/
-
