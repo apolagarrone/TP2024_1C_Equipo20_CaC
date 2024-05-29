@@ -833,7 +833,9 @@ footer{
     margin: auto;
 }
 
-
+.seccionDestino1, .seccionDestino2 {
+    padding-top: 35px;
+}
 .mapa iframe{
     max-width: 90vw;
     max-height: 30vh;

@@ -446,9 +446,13 @@ input[type=checkbox]:checked + label::before{
 
 }
 
+.testimonios h1{
+    padding-bottom: 20px;
+}
 .testimonios p{
     justify-content: center;
     text-align: justify;
+    padding-bottom: 30px;
     
 }
 
