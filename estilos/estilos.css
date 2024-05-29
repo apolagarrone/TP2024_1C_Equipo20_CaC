@@ -631,9 +631,11 @@ footer{
 /*MEDIA QUERYES*/
 
 @media only screen and (max-width: 600px) {
-/*body{
-    background-color: #7AB730;
-}*/
+
+h1{
+    line-height: 1em;
+    padding-bottom: 20px;
+}
 
 header{
     display: none;
@@ -723,6 +725,17 @@ form {
     width: 90vw;
     padding: 4em 1em 0 1em;
 }
+
+.testimonios h1{
+    line-height: 1em;
+    padding-bottom: 20px;
+
+}
+
+.testimonios p{
+    padding-bottom: 20px;
+}
+
 #controles{
     width: 65vw;
 }
@@ -843,8 +856,9 @@ form {
         width: 90vw;
         padding: 4em 1em 0 1em;
     }
-
-  
+    .testimonios p{
+        padding-bottom: 20px;
+    }
 
 
 
