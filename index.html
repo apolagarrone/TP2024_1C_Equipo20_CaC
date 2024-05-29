@@ -9,8 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="img/favicon.png">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <script src="https://kit.fontawesome.com/f7fb471b65.js" crossorigin="anonymous"></script> 
-    <link rel="stylesheet" href="estilos/estilos.css">
+    <link rel="stylesheet" href="./estilos/estilos.css">
     <title>ArgentiNA Viajes</title>
 </head>
 
@@ -164,30 +163,18 @@
             <article class="testimonios">
                 <H2>reseñas</H2>
                 <h1>Experiencias en primera persona</h1>
-                <p>Ofrecemos experiencias que se sienten en el cuerpo y el alma. 
-                    <br>Nuestros viajeros ya lo saben y nos recomiendan</p>
-                
-                <div id="controles">
-                        <button id="Agregar">Ver más reseñas</button>
-                        <button id="Quitar">Ver menos</button>
-            </div>
-            </article>
-            
+                <p style="align-content:center">
+                    Ofrecemos experiencias que se sienten en el cuerpo y el alma.
+                    <br> &emsp;&emsp;&emsp;Nuestros viajeros ya lo saben y nos recomiendan
+                </p>
+            </article>            
             <section id="main-reseñas">
-                <div id="Persona">
-                    <figure id="comentario">
-                        <img id="Foto" src="" alt="">
-                        <div class="descripcion">
-                            <h4><span id="Nombre"></span></h4>
-                            <h2><span id="Servicio"></span>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                            </h2>
-                            <h2><span id="Descripcion"></span></h2>
-                        </div>
-                    </figure>
+                <div class="carousel">
+                    <div class="carousel-container"></div>
+                    <div id="controles">
+                        <button class="carousel-button prev">Anterior</button>
+                        <button class="carousel-button next">Siguiente</button>
+                    </div>
                 </div>
             </section>
         </section>
@@ -205,10 +192,10 @@
                 </p>
 
                 <div class="social">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="bx bxl-facebook"></i></a>
+                    <a href="#"><i class="bx bxl-twitter"></i></a>
+                    <a href="#"><i class="bx bxl-instagram"></i></a>
+                    <a href="#"><i class="bx bxl-linkedin"></i></a>                
                 </div>
             </figure>
 
@@ -245,7 +232,7 @@
 </footer>
 
     <!-- script de json -->
-    <script src="js/json.js"></script>
+    <script src="./js/json.js"></script>
     
 </body>
 </html>

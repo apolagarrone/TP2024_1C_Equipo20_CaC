@@ -410,9 +410,9 @@ ul
     justify-content: center;
     align-items: center;
     bottom: 10px;
-    width: 300px;
+    width: 70%;
     height: 35px;
-    padding: 15px 0 1% 0;
+    padding: 1% 0 1% 0;
     margin: auto;
     border: 1px solid #405319;
     border-radius: 5px;
@@ -468,7 +468,7 @@ ul
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 20px;
+    padding-top: 170px;
 }
 
 .seccionDestino1{
@@ -554,12 +554,14 @@ ul
      flex-direction: row-reverse;
 }
 
+/*
+
 footer{
-    /*position: sticky;*/
+    /*position: sticky;
     bottom: 0;
-    /*background-color: rgb(90, 90, 90);*/
+    /*background-color: rgb(90, 90, 90);
     text-align: center;
-    /*padding: 10px;*/
+    /*padding: 10px;
     background-color: #000000ff;
     position: relative;
     width: 100vw;
@@ -567,7 +569,7 @@ footer{
     min-height: 350px;
     padding: 3rem 1rem 0;
 }
-
+*/
 .mapa{
     position: relative;
     text-align: center;    
@@ -577,21 +579,106 @@ footer{
     text-align: left;
 }
 
-/*footer{
-    position: sticky;
-    bottom: 0;
-    max-height: 10vh;
-    background-color: rgb(90, 90, 90);
-    text-align: center;
-    padding: 10px;
-}*/
 
-/*SECCION FOOTER*/
+/* FOOTER*/
+
 footer{
-    background-color: rgb(0, 0, 0);
+    background-color: #000000ff;
     position: relative;
-   
+    width: 100vw;
+    min-height: 350px;
+}
+.container {
+   max-width: 1300px;
+   margin: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   padding: 21px 10px   ;
+}
+.ppal{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
 
+.col{
+    width: 80%;
+    color:#f2f2f2f2;
+    font-family: poppins;
+    padding:0 2rem;
+}
+
+.col .logo{
+    display: flex;
+    width: 200px;
+    margin: 25px auto;
+}
+ .col h3{
+    color: white;
+    margin: 20px auto;
+    position: relative;
+    cursor: default;
+    letter-spacing: 5px;
+    font-size: 1.5em;
+ }
+ .col .social a i {
+    color: #7AB730;
+    width: 45px;
+    height: 45px;
+    margin-top: 2rem;
+    margin-right: 10px;
+    text-align: center;
+    border-color: #7AB730;
+    border-style: outset;
+    transition: all 300ms ease;
+    font-size: 2.35em;
+    float: inline-start;
+}
+
+ .col .social a i:hover{
+     background-color: #7AB730;
+     color: white;
+}
+
+ .col .links a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color:#6c757d;
+    margin-bottom: 5px;
+    position: relative;
+    transition: all 300ms ease;
+ }
+ .col .links a:hover{
+    transform: translateX(-8px);
+    color:#7AB730;
+ }
+ .col .contactos-detalles{
+    display: inline-flex;
+    justify-content: space-between;
+ }
+ .col .contactos-detalles .bx{
+    margin-right:15px;
+    color: #7AB730;
+    font-size: 26px;
+ }
+ .copy{
+     margin-top: 30px;
+     padding: 15px 0;
+ }
+ 
+
+/*
+/*SECCION FOOTER
+
+footer{
+    background-color: #000000ff;
+    position: relative;
+    width: 100vw;
+    min-height: 350px;
+    padding: 3rem 1rem 0;
 }
 .container {
    max-width: 1300px;
@@ -611,20 +698,18 @@ footer{
    min-width: 250px;
    color:#f2f2f2f2;
    font-family: poppins;
-   
+   padding:0 2rem;
 }
 .col .logo{
    width: 200px;
    margin-bottom:25px;
 }
 .col h3{
-   color: rgb(255, 255, 255);
-   font-size: 20px;
+   color: white;
    margin-bottom: 20px;
    position: relative;
    cursor: default;
    letter-spacing: 5px;
-   text-align: justify;
 }
 .col .social a i{
    color: #7AB730;
@@ -636,6 +721,8 @@ footer{
    border-color: #7AB730;
    border-style: outset;
    transition: all 300ms ease;
+   font-size: 2.35em;
+   float: inline-start;
 }
 .col .social a i:hover{
     background-color: #7AB730;
@@ -654,28 +741,18 @@ footer{
    color:#7AB730;
 }
 .col .contactos-detalles{
-
    display: inline-flex;
    justify-content: space-between;
-   
 }
 .col .contactos-detalles i{
    margin-right:15px;
-   color: #7AB730;
-   font-size: 1.5em;
-   
-
 }
 .copy{
-    margin-top: 100px;
-    padding: 20px;
-    color:#6c757d;
-    font-size: 18px;
-
+    margin-top: 30px;
+    padding: 15px 0;
 }
+*/
 
-
-   
 
 /*MEDIA QUERYES*/
 
@@ -705,13 +782,19 @@ footer{
     height: 40%;
 }
 
-#contenedor-dest {
+.presentacion p{
+    padding: 0;
+    
+}
+
+.contenedor-dest {
         max-width: 100%;
         margin: auto;
         display: flex;       
         flex-direction: column;
         row-gap: 10px;
-        box-sizing: content-box;}   
+        box-sizing: content-box;
+    }   
 
 .destinos{
     margin: 10px auto;
@@ -734,7 +817,7 @@ footer{
     
     display: flex;
     flex-direction: column;
-    padding-top: 10px;
+    
 }
     
 .destino1 p, .destino2 p {
@@ -750,19 +833,31 @@ footer{
     margin: auto;
 }
 
-.footer{
-    background-color: #405319;
-    width: 100vh;
-    position: sticky;
-    bottom: 0;
-}
 
 .mapa iframe{
     max-width: 90vw;
     max-height: 30vh;
 }
 
+/* FOOTER */
+
+    .ppal{
+    flex-direction: column;
+    }
+
+    .col {
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    .col i{
+        text-align: center
+        ;
+    }
+
+    
 }
+
+
 
 @media only screen and (min-width: 601px) and (max-width: 1199px) {
 
@@ -771,16 +866,17 @@ footer{
         max-height: 30vh;
     }
 
-.header
-{
-    width: 98%;
-    margin: auto;
-    background-color: #ffffff;
-    height: 90px;
-    font-size: 14px;
-    z-index: 9999;
-    padding: 10px 15px;
-}
+    .header
+    {
+        width: 99%;
+        margin: auto;
+        background-color: #ffffff;
+        height: 80px;
+        font-size: 14px;
+        z-index: 9999;
+        padding: 10px 15px;
+    }
+
 .nav  {  
     display: flex;
     width: 85%;    
@@ -886,25 +982,39 @@ footer{
     margin: 90px 0px auto;
 }
 
+/*FOOTER*/
+
+.ppal {
+    flex-direction: column;
 }
 
+
+}
+    
+
+
+
 @media only screen and (min-width: 1200px) {
+
+    .header
+{
+    width: 99%;
+    margin: auto;
+    background-color: #ffffff;
+    height: 80px;
+    font-size: 14px;
+    z-index: 9999;
+    padding: 10px 15px;
+}
 
     .mapa iframe{
         max-width: 80vw;
         max-height: 30vh;
     }
 
-    .header
-{
-    width: 98%;
-    margin: auto;
-    background-color: #ffffff;
-    height: 90px;
+    .header {
     font-size: 14px;
-    z-index: 9999;
-    padding: 10px 15px;
-}
+    }
 
 
 .nav  {  
@@ -1001,7 +1111,7 @@ footer{
         color: #7AB730;
         font-size: 26px;
         float: right;
-        padding: 5px 5px 0px 0px;   
+        padding: 8px 12px 0px 12px;   
     }
     .bx{
         padding: 0px 5px;

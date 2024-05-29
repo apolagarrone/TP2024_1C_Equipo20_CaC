@@ -182,7 +182,7 @@ nav a:hover, a:active {
     justify-content: center;
     vertical-align: middle;
     object-fit: cover;
-    object-position: top;
+    object-position: 71%;
 }
 
 .present-article{
@@ -386,7 +386,53 @@ input[type=checkbox]:checked + label::before{
     font-size: 16px;
 }
 
+/*car de img*/
+.carousel-container {
+    display: flex;
+    overflow: hidden;
+    width: 300px; /* Ajusta el tamaño del carrusel */
+    margin: 0 auto;
+    position: relative;
+}
+    .carousel-container h1 {
+        color: #7AB730;
+    }
+    .carousel-container h2 {
+        color: black !important;
+    }
+.carousel-slide {
+    display: none;
+    width: 100%;
+    text-align: center;
+}
 
+    .carousel-slide img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .carousel-slide.active {
+        display: block;
+    }
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+    .carousel-button.prev {
+        left: 10px;
+    }
+
+    .carousel-button.next {
+        right: 10px;
+    }
 /* SECCION TESTIMONIOS - stylo de las cartas de reseñas*/
 
 
@@ -550,6 +596,8 @@ footer{
    border-color: #7AB730;
    border-style: outset;
    transition: all 300ms ease;
+   font-size: 2.35em;
+   float: inline-start;
 }
 .col .social a i:hover{
     background-color: #7AB730;

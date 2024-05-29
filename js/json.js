@@ -1,50 +1,62 @@
-let persona=document.querySelector("#Persona");
-let personaCopia=persona.cloneNode(true);
+document.addEventListener("DOMContentLoaded", () => {
+    const carouselContainer = document.querySelector('.carousel-container');
+    const prevButton = document.querySelector('.carousel-button.prev');
+    const nextButton = document.querySelector('.carousel-button.next');
+    let slides = [];
+    let currentIndex = 0;
+    fetch('https://apolagarrone.github.io/TP2024_1C_Equipo20_CaC/datos.json')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(data => {
+            console.log('Datos obtenidos del JSON:', data); 
 
-let contenedor=document.querySelector("#main-reseñas");//cambio main por main-reseñas
-persona.remove()
+            if (data.length > 0 && Array.isArray(data[0].Destinos)) {
+                slides = data[0].Destinos;
+                renderCarousel();
+            } else {
+                console.error('Formato de JSON inesperado');
+            }
+        })
+        .catch(error => {
+            console.error('Error fetching data:', error);
+        });
 
-let botonAgregar=document.querySelector("#Agregar");
-botonAgregar.addEventListener("click", function(){
-    AgregarPersona();
-});
-
-let botonQuitar = document.querySelector("#Quitar");
-botonQuitar.addEventListener("click", QuitarPersona)
-
-let indexPersona=0;
-
-
-function AgregarPersona(){
-    fetch("https://apolagarrone.github.io/TP2024_1C_Equipo20_CaC/datos.json")
-    .then(response => response.json())
-    .then(data => {
-        // Procesamiento de la info que llega de la API
-        let destino = data[0].Destinos[indexPersona];
-        
-        let nuevaPersona = personaCopia.cloneNode(true);
-        nuevaPersona.querySelector("#Foto").src = destino.image;
-        nuevaPersona.querySelector("#Foto").alt = "fot CV";
-        nuevaPersona.querySelector("#Nombre").innerHTML = destino.Nombre;
-        nuevaPersona.querySelector("#Servicio").innerHTML = destino.Servicio;
-
-        nuevaPersona.querySelector("#Descripcion").innerHTML = destino.Descripcion;
-
-        contenedor.appendChild(nuevaPersona);
-
-        // Incrementar el índice para la próxima persona
-        indexPersona++;
-
-
-        if (indexPersona >= data[0].Destinos.length) {
-            indexPersona=0; // inicia otra vez los registros
-        }
-    })
-    .catch(error => console.log("Ocurrió un error! " + error));
-}
-
-function QuitarPersona(){
-    if(contenedor.childElementCount > 0){
-        contenedor.removeChild(contenedor.lastChild);
+    function renderCarousel() {
+        carouselContainer.innerHTML = '';
+        slides.forEach((slide, index) => {
+            const slideElement = document.createElement('div');
+            slideElement.classList.add('carousel-slide');
+            if (index === 0) {
+                slideElement.classList.add('active'); 
+            }
+            slideElement.innerHTML = `
+                <img src="${slide.image}" alt="${slide.Nombre}">
+                <h1>${slide.Nombre}</h1>
+                <h2>Edad: ${slide.Edad}</h2>
+                <h2>Servicio: ${slide.Servicio}</h2>
+                <h2>Descripción: ${slide.Descripcion}</h2>
+                <h2>Origen: ${slide.Origen}</h2>
+            `;
+            carouselContainer.appendChild(slideElement);
+        });
+        updateCarousel();
     }
-}
+    function updateCarousel() {
+        const slideElements = document.querySelectorAll('.carousel-slide');
+        slideElements.forEach((slide, index) => {
+            slide.classList.toggle('active', index === currentIndex);
+        });
+    }
+    prevButton.addEventListener('click', () => {
+        currentIndex = (currentIndex > 0) ? currentIndex - 1 : slides.length - 1;
+        updateCarousel();
+    });
+    nextButton.addEventListener('click', () => {
+        currentIndex = (currentIndex < slides.length - 1) ? currentIndex + 1 : 0;
+        updateCarousel();
+    });
+});
